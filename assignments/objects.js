@@ -10,37 +10,93 @@
 // 5,adaine5@samsung.com,Antonietta,F
 
 // Example format of an intern object: 1,examples@you.edu,Example,F
-const example = {
+/* const example = {
   "id": 0,
   "name": "Example",
   "email": "examples@you.edu",
   "gender": "F"
 }
-
+ */
 // Write your intern objects here:
 
+const internObj1 = {
+  "id": 1,
+  "name": "Mitzi",
+  "email": "mmelloy0@psu.edu",
+  "gender": "F"
+
+}
+
+const internObj2 = {
+  "id": 2,
+  "name": "Kennan",
+  "email": "kdiben1@tinypic.com",
+  "gender": "M",
+  speak: function(){
+    return `Hello, my name is ${this.name}!`
+  }
+
+}
+const internObj3 = {
+  "id": 3,
+  "name": "Keven",
+  "email": "kmummery2@wikimedia.org",
+  "gender": "M"
+
+}
+const internObj4 = {
+  "id": 4,
+  "name": "Gannie",
+  "email": "gmartinson3@illinois.edu",
+  "gender": "M"
+
+}
+
+const internObj5 = {
+  "id": 5,
+  "name": "Antonietta",
+  "email": "adaine5@samsung.com",
+  "gender": "F",
+  multiplyNums : function(num1, num2) {
+    return num1 * num2;
+  }
+
+}
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
 
+console.log(internObj1.name);
+
 // Kennan's ID
+console.log(internObj2.id);
 
 // Keven's email
+console.log(internObj3.email);
 
 // Gannie's name
+console.log(internObj4.name);
 
 // Antonietta's Gender
+console.log(internObj1.gender);
+
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
+console.log(internObj2.speak());
+
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 
+console.log(internObj5.multiplyNums(3, 4));
+
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
+
+
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ==== 
 
